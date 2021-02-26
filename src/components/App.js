@@ -5,8 +5,13 @@ import NavBar from "./NavBar";
 function App() {
   return (
     <div className="App">
-      <h2>Surreal Estate</h2>
       <NavBar />
+      <h2>Surreal Estate</h2>
+      <ul className="navbar-links-item">
+        <li>View Properties</li>
+
+        <li>Add a Property</li>
+      </ul>
     </div>
   );
 }

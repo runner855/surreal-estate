@@ -5,11 +5,10 @@ const NavContainer = styled.div`
 `;
 
 const HeroImage = styled.img`
-  height: 5em;
-  width: 5em;
-
-  flex-direction: end;
-  display: flex;
+  padding: 1.3em;
+  height: 3em;
+  width: 3em;
+  float: left;
 `;
 
 const NavBar = () => {
@@ -18,7 +17,7 @@ const NavBar = () => {
       <NavContainer>
         <HeroImage
           id="img-lg"
-          src="https://i.pinimg.com/736x/69/34/73/693473a49f5048dd83077eb82b4513f9.jpg"
+          src="https://www.pinclipart.com/picdir/big/519-5193111_house-clipart-animated-transparent-house-cartoon-png.png"
           alt="house-logo"
         />
       </NavContainer>
