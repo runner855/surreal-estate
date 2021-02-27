@@ -1,26 +1,30 @@
-import styled from "styled-components";
-
-const NavContainer = styled.div`
-  border-bottom: 5px;
-`;
-
-const HeroImage = styled.img`
-  padding: 1.3em;
-  height: 3em;
-  width: 3em;
-  float: left;
-`;
+import React from "react";
+import "../styles/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <>
-      <NavContainer>
-        <HeroImage
-          id="img-lg"
+      <div className="navbar">
+        <img
           src="https://www.pinclipart.com/picdir/big/519-5193111_house-clipart-animated-transparent-house-cartoon-png.png"
           alt="house-logo"
         />
-      </NavContainer>
+        <ul className="navbar-links">
+          <ul className="navbar-links-item">
+            <li>
+              <Link className="item" to="/">
+                View Properties
+              </Link>
+            </li>
+            <li>
+              <Link className="item" to="/add-property">
+                Add a Property
+              </Link>
+            </li>
+          </ul>
+        </ul>
+      </div>
     </>
   );
 };

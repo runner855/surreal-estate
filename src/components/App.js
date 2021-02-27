@@ -1,5 +1,8 @@
 import React from "react";
 import "../styles/App.css";
+import { Route, Switch } from "react-router-dom";
+import Properties from "./Properties";
+import AddProperty from "./AddProperty";
 import NavBar from "./NavBar";
 
 function App() {
@@ -7,11 +10,11 @@ function App() {
     <div className="App">
       <NavBar />
       <h2>Surreal Estate</h2>
-      <ul className="navbar-links-item">
-        <li>View Properties</li>
+      <Switch>
+        <Route exact path="/" component={Properties} />
 
-        <li>Add a Property</li>
-      </ul>
+        <Route path="/add-property" component={AddProperty} />
+      </Switch>
     </div>
   );
 }

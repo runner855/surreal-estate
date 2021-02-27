@@ -1,1 +1,30 @@
-
+.navbar img {
+  height: 35px;
+}
+.navbar {
+  background-color: rgb(130, 157, 237);
+  border-bottom: 3px solid black;
+  display: flex;
+}
+.navbar-links {
+  margin: 0;
+  padding: 0;
+}
+.navbar-links-item {
+  padding: 7px;
+  list-style-type: none;
+  text-align: center;
+}
+.navbar-links-item li {
+  display: inline-block;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 11px;
+  list-style-type: none;
+}
+@media only screen and (max-width: 750px) {
+}
+li:hover {
+  color: white;
+}
