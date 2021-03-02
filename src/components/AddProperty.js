@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles/AddProperty.css";
 
 const initialState = {
@@ -19,8 +20,12 @@ const AddProperty = () => {
   const handleAddProperty = (event) => {
     event.preventDefault();
 
-    // eslint-disable-next-line no-console
-    console.log(fields);
+    axios
+      .post(`http://localhost:4000/api/v1/PropertyListing`, { fields })
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+      });
   };
 
   const handleFieldChange = (event) => {
@@ -118,6 +123,7 @@ const AddProperty = () => {
               <option value="Leeds">Leeds</option>
               <option value="Sheffield">Sheffield</option>
               <option value="Liverpool">Liverpool</option>
+              <option value="London">London</option>
             </select>
           </label>
         </div>
