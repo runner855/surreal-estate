@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <h2>Surreal Estate</h2>
+
       <Switch>
         <Route exact path="/" component={Properties} />
 

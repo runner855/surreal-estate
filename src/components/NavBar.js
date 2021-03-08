@@ -4,29 +4,27 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <>
-      <div className="navbar">
-        <img
-          src="https://www.pinclipart.com/picdir/big/519-5193111_house-clipart-animated-transparent-house-cartoon-png.png"
-          alt="house-logo"
-        />
+    <header className="navbar">
+      <img
+        src="https://www.pinclipart.com/picdir/big/519-5193111_house-clipart-animated-transparent-house-cartoon-png.png"
+        alt="house-logo"
+      />
+      <h2>Surreal Estate</h2>
+      <nav>
         <ul className="navbar-links">
-          <ul className="navbar-links-item">
-            <li>
-              <Link className="item" to="/">
-                View Properties
-              </Link>
-            </li>
-            <li>
-              <Link className="item" to="/add-property">
-                Add a Property
-              </Link>
-            </li>
-          </ul>
+          <li className="navbar-links-item">
+            <Link className="item" to="/">
+              View Properties
+            </Link>
+          </li>
+          <li className="navbar-links-item">
+            <Link className="item" to="/add-property">
+              Add a Property
+            </Link>
+          </li>
         </ul>
-      </div>
-    </>
+      </nav>
+    </header>
   );
 };
-
 export default NavBar;

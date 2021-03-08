@@ -1,20 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 form {
-  padding: 40px;
-  margin: 10px;
+  width: 600px;
+  height: 700px;
+  padding: 20px;
+  background-color: white;
+  margin: 30px;
   display: center;
-  border: solid rgb(130, 157, 237);
+  border-radius: 40px;
+}
+
+button {
   border-radius: 10px;
-  text-align: center;
+  outline: none;
+  width: 70px;
+  background-color: #c8e8e8;
 }
 
 button:hover {
   color: white;
   background-color: rgb(130, 157, 237);
   border-radius: 10px;
+  outline: none;
 }
 
-input,
-select {
-  border-radius: 3px;
-  outline: none;
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+select[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+div.prop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input {
+  width: 200px;
+  height: 26px;
+  justify-content: center;
+}
+
+label {
+  font-size: 20px;
 }

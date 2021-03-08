@@ -21,11 +21,8 @@ const AddProperty = () => {
     event.preventDefault();
 
     axios
-      .post(`http://localhost:4000/api/v1/PropertyListing`, { fields })
-      .then((res) => {
-        console.log(res);
-        console.log(res.data);
-      });
+      .post("http://localhost:4000/api/v1/PropertyListing", fields)
+      .then(() => {});
   };
 
   const handleFieldChange = (event) => {
@@ -36,6 +33,8 @@ const AddProperty = () => {
       <form onSubmit={handleAddProperty}>
         <div className="title">
           <label htmlFor="title">
+            Title:
+            <br />
             <input
               id="title"
               name="title"
@@ -47,6 +46,8 @@ const AddProperty = () => {
         </div>
         <div className="type">
           <label htmlFor="type">
+            Type:
+            <br />
             <select
               id="type"
               name="type"
@@ -65,6 +66,8 @@ const AddProperty = () => {
         </div>
         <div className="bedrooms">
           <label htmlFor="bedrooms">
+            Bedrooms:
+            <br />
             <input
               type="number"
               min="1"
@@ -80,6 +83,8 @@ const AddProperty = () => {
         </div>
         <div div className="bathrooms">
           <label htmlFor="bathrooms">
+            Bathrooms:
+            <br />
             <input
               type="number"
               min="1"
@@ -95,6 +100,8 @@ const AddProperty = () => {
         </div>
         <div div className="price">
           <label htmlFor="price">
+            Price:
+            <br />
             <input
               type="number"
               className="currency"
@@ -112,6 +119,8 @@ const AddProperty = () => {
         </div>
         <div className="city">
           <label htmlFor="city">
+            City:
+            <br />
             <select
               id="city"
               name="city"
@@ -129,6 +138,8 @@ const AddProperty = () => {
         </div>
         <div className="email">
           <label htmlFor="email">
+            Email:
+            <br />
             <input
               id="email"
               name="email"
@@ -138,6 +149,7 @@ const AddProperty = () => {
             />
           </label>
         </div>
+
         <button type="submit">Add</button>
       </form>
     </div>

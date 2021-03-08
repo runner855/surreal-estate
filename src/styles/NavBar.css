@@ -1,30 +1,26 @@
-.navbar img {
-  height: 35px;
+img {
+  height: 60px;
+  padding: 20px 20px 0 10px;
+}
+
+h2 {
+  padding: 22px 33px 0px 0px;
+  font-size: 15px;
+}
+
+li {
+  display: inline-block;
+  padding: 33px 33px 0 0;
+  color: black;
+  font-size: 15px;
+  list-style-type: none;
 }
 .navbar {
   background-color: rgb(130, 157, 237);
-  border-bottom: 3px solid black;
+  border-bottom: solid black;
   display: flex;
 }
 .navbar-links {
   margin: 0;
   padding: 0;
-}
-.navbar-links-item {
-  padding: 7px;
-  list-style-type: none;
-  text-align: center;
-}
-.navbar-links-item li {
-  display: inline-block;
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 10px;
-  font-size: 11px;
-  list-style-type: none;
-}
-@media only screen and (max-width: 750px) {
-}
-li:hover {
-  color: white;
 }
