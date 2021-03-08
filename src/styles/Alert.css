@@ -1,0 +1,7 @@
+.alert-error {
+  border: red solid 4px;
+}
+
+.alert-success {
+  border: green solid 4px;
+}
