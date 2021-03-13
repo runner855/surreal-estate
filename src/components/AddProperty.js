@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Alert from "./Alert";
 import "../styles/AddProperty.css";
 
 const initialState = {
@@ -47,11 +48,8 @@ const AddProperty = () => {
   };
   return (
     <div className="prop" value="AddProperty">
-      <form
-        message={alert.message}
-        success={alert.isSuccess}
-        onSubmit={handleAddProperty}
-      >
+      <Alert message={alert.message} success={alert.isSuccess} />
+      <form onSubmit={handleAddProperty}>
         <div className="title">
           <label htmlFor="title">
             Title:

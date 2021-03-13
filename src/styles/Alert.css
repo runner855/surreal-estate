@@ -1,7 +1,13 @@
 .alert-error {
   border: red solid 4px;
+  text-align: center;
+  color: red;
+  background: whitesmoke;
 }
 
 .alert-success {
   border: green solid 4px;
+  text-align: center;
+  color: greenyellow;
+  background: whitesmoke;
 }
