@@ -17,7 +17,7 @@ li {
 }
 .navbar {
   background-color: rgb(130, 157, 237);
-  border-bottom: solid black;
+  border-bottom: solid 3px black;
   display: flex;
 }
 .navbar-links {
